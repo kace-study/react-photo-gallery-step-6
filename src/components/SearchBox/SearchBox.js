@@ -1,5 +1,6 @@
 import React from 'react';
 import { InputGroup, InputGroupAddon, Input, Button } from 'reactstrap';
+import { FaSearch } from 'react-icons/fa';
 
 class SearchBox extends React.Component {
 
@@ -30,7 +31,9 @@ class SearchBox extends React.Component {
           onKeyPress={(e) => this.onKeyPress(e)}>
         </Input>
         <InputGroupAddon addonType="append">
-          <Button color="dark" onClick={() => this.onClick()}>検索</Button>
+          <Button color="dark" onClick={() => this.onClick()}>
+            <FaSearch />
+          </Button>
         </InputGroupAddon>
       </InputGroup>
     );
