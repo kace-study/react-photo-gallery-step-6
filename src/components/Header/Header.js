@@ -21,7 +21,7 @@ class Header extends React.Component {
       <div>
         <Navbar fixed="top" color="dark" dark>
           <Container>
-            <NavbarBrand href="/" className="mr-auto">Kace Gallery</NavbarBrand>
+            <NavbarBrand href="https://kace-study.github.io/react-photo-gallery/" className="mr-auto">Kace Gallery</NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
             <Collapse isOpen={!this.state.collapsed} navbar>
               <Nav navbar>
