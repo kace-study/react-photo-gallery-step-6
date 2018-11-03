@@ -4,8 +4,6 @@ import SearchBox from '../SearchBox/SearchBox';
 import PhotoList from '../PhotoList/PhotoList';
 import './Gallery.css';
 
-const API_KEY = "YOUR API KEY HERE!";
-
 class Gallery extends Component {
 
   constructor(props) {
@@ -19,7 +17,7 @@ class Gallery extends Component {
 
   search = (keyword) => {
     const param = { method: 'GET' };
-    const url = 'https://pixabay.com/api/?key=' + API_KEY 
+    const url = 'https://pixabay.com/api/?key=' + process.env.REACT_APP_API_KEY 
       + '&q=' + keyword.toLowerCase() 
       + '&image_type=photo' 
       + '&min_width=200&min_height=200';
